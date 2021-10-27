@@ -1,0 +1,42 @@
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+.container-fluid {
+	overflow: hidden;
+}
+
+.arrows {
+	a {
+		padding: 0.875rem 1.25rem;
+		border-radius: 0.5rem;
+		background-color: #fdf9f1;
+		color: #dbb6a9;
+
+		&:hover {
+			background-color: $theme-color;
+			color: $white;
+		}
+	}
+}
+
+.slick-slide {
+	height: auto;
+}
+
+marquee {
+	font-size: 1.875rem;
+	color: $white;
+	word-spacing: 1rem;
+}
+
+
+.about-detail {
+	padding: 3.5rem;
+
+	@include media-breakpoint-up(lg) {
+		position: absolute;
+		top: -4rem;
+		right: 6rem;
+		max-width: 35rem;
+	}
+}

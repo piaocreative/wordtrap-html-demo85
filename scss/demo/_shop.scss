@@ -1,0 +1,183 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+/* category
+-----------------------------------------------------------------*/
+.category {
+	position: relative;
+	margin-bottom: 2.875rem;
+
+	.category-image {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.category-details {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		padding: 1rem;
+		padding-right: 5rem;
+		background-color: $white;
+	}
+}
+
+
+/* Product
+-----------------------------------------------------------------*/
+.product {
+	position: relative;
+	margin-bottom: 0.875rem;
+
+	.product-image {
+		position: relative;
+
+		img {
+			width: 100%;
+			margin: auto;
+		}
+	}
+
+	.product-details {
+		padding: 2rem 2rem 0;
+		z-index: 1;
+	}
+
+	.product-price {
+		font-size: 1.875rem;
+
+		del {
+			font-size: 0.875rem;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 300;
+			color: #aebcd0;
+			margin-left: 0.5rem;
+		}
+	}
+
+	.product-title {
+		font-size: 1rem;
+		font-weight: 400;
+	}
+
+	.product-info {
+		a {
+			font-size: 0.875rem;
+			color: 	#aebcd0;
+			margin: 0 0.5rem;
+		}
+	}
+
+	.product-rating {
+		line-height: 1;
+		font-size: 0.875rem;
+		color: #b3b2b0;
+
+		i {
+			color: #ff893f;
+			font-size: 0.65rem;
+
+			&.empty {
+				color: rgba(#ff893f, 0.5);
+			}
+		}
+	}
+
+	.product-btns {
+		@include transition(all 0.5s ease-in-out);
+	}
+
+	.add-to-cart {
+		color: $dark;
+	}	
+
+	.add-to-wishlist {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 1.2rem;
+		background-color: $white;
+		color: #d7dce5;
+	}
+
+	&:hover {
+		.product-btns {
+			opacity: 1;
+		}
+	}
+}
+
+.onbest, .onsale, .onnew {
+	padding: 0.25rem 0.5rem;
+	line-height: 1;
+    color: $white;
+}
+
+.onbest {
+	background-color: #2363ff;
+}
+
+.onsale {
+	background-color: #f94241;
+}
+
+.onnew {
+	background-color: #59cf57;
+}
+
+.ads {
+    position: relative;
+    display: block;
+	margin-bottom: 1.5rem;
+
+    .ads-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .ads-bg-img {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .ads-body {
+        position: relative;
+        z-index: 1;
+    }
+
+	&.ads1 {
+		.ads-body {
+			padding: 5.5rem 4rem;
+	
+			h3 {
+				line-height: 1.2;
+			}
+		}
+	}
+}

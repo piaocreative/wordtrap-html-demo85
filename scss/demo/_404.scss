@@ -1,0 +1,23 @@
+/* ----------------------------------------------------------------
+
+	404.scss
+
+-----------------------------------------------------------------*/
+#error-404 {
+    background-color: #1a4a61;
+}
+
+.error-sidebar {
+    ul {
+        li {
+            padding: 0.5rem 0;
+            border-bottom: 1px dotted #ffffff;
+
+            a {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+                color: $white;
+            }
+        }
+    }
+}
